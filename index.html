@@ -73,6 +73,102 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hexo使用记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" class="article-date">
+  <time class="dt-published" datetime="2023-09-10T13:33:43.000Z" itemprop="datePublished">2023-09-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/">hexo使用记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Hexo-使用记录"><a href="#Hexo-使用记录" class="headerlink" title="Hexo 使用记录"></a>Hexo 使用记录</h1><h2 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h2><p><strong>安装 Hexo</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p><strong>升级 Hexo</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm update hexo -g</span><br></pre></td></tr></table></figure>
+
+<p><strong>初始化 blog 文件夹</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [floder_name]</span><br></pre></td></tr></table></figure>
+
+<p><strong>新建文章</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;blog_name&quot;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">或</span></span><br><span class="line">hexo new &quot;blog_name&quot;</span><br></pre></td></tr></table></figure>
+
+<p><strong>生成静态文件</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">或</span></span><br><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行 Hexo 本地服务端</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">或</span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p><strong>部署 blog</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"></span></span><br><span class="line"><span class="language-bash">hexo deploy</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>清空缓存</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<h2 id="将-Hexo-与-GitHub-关联起来"><a href="#将-Hexo-与-GitHub-关联起来" class="headerlink" title="将 Hexo 与 GitHub 关联起来"></a>将 Hexo 与 GitHub 关联起来</h2><p><strong>打开配置文件</strong><code>_config.yml</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> [<span class="string">github仓库地址</span>]</span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>安装 git 部署插件</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h2 id="将-blog-绑定自己的域名"><a href="#将-blog-绑定自己的域名" class="headerlink" title="将 blog 绑定自己的域名"></a>将 blog 绑定自己的域名</h2><ol>
+<li><p>在域名解析处增加两条记录：</p>
+<table>
+<thead>
+<tr>
+<th align="left">记录类型</th>
+<th align="left">主机记录</th>
+<th align="left">记录值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">CNAME</td>
+<td align="left">www</td>
+<td align="left">username.github.io</td>
+</tr>
+<tr>
+<td align="left">A</td>
+<td align="left">@</td>
+<td align="left">[博客 ip]</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>在 GitHub 对应仓库设置选项中找到<strong>custom domain</strong>，输入自己的域名，可以勾选强制开启 HTTPS 访问</p>
+</li>
+<li><p>在仓库中增加一个<code>CNAME</code>文件，文件内容是自己的顶级域名</p>
+</li>
+</ol>
+<p>完成以上三步后，清空本地缓存，重新生成部署后，即可通过自己的域名访问 blog</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" data-id="clmdizn8c0002zcfm54nebzze" data-title="hexo使用记录" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-express" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/09/10/express/" class="article-date">
@@ -124,7 +220,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/express/" data-id="clmdhphf40000k4fm2fbldfhc" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/09/10/express/" data-id="clmdizn890001zcfm1ad7bq6a" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -188,7 +284,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/git_learn/" data-id="clmdhphf90001k4fm9e9tbxny" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/09/10/git_learn/" data-id="clmdizn850000zcfmewkkepre" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -364,7 +460,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/webpack-study/" data-id="clmdhphfb0003k4fm1dfj2otr" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/09/10/webpack-study/" data-id="clmdizn8f0006zcfm9aeh85o3" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -415,7 +511,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/hello-world/" data-id="clmdhphfc0004k4fmbstff98d" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/09/10/hello-world/" data-id="clmdizn8d0003zcfm0rrd74c2" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -453,7 +549,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/test-my-site/" data-id="clmdhphfb0002k4fm8l0r4s6m" data-title="test_my_site" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/09/10/test-my-site/" data-id="clmdizn8e0004zcfmgfd2gxbj" data-title="test_my_site" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -519,7 +615,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/06/v3-blog/" data-id="clmdhphfd0005k4fm8yfybyuu" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/09/06/v3-blog/" data-id="clmdizn8e0005zcfmecgmflr8" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -562,6 +658,10 @@
       <ul>
         
           <li>
+            <a href="/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/">hexo使用记录</a>
+          </li>
+        
+          <li>
             <a href="/2023/09/10/express/">(no title)</a>
           </li>
         
@@ -575,10 +675,6 @@
         
           <li>
             <a href="/2023/09/10/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/10/test-my-site/">test_my_site</a>
           </li>
         
       </ul>
