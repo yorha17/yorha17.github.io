@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="git 学习记录基础指令git init 将文件夹初始化为一个 git 仓库 git status 查看所有文件状态  git add &lt;filename&gt; 将未跟踪状态的文件加入暂存区  git commit -m &quot;提交注释内容&quot; 将暂存区文件提交到仓库  git log 查看提交历史  git log 命令参数 12345git log [option]--a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/09/10/git_learn/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="git 学习记录基础指令git init 将文件夹初始化为一个 git 仓库 git status 查看所有文件状态  git add &lt;filename&gt; 将未跟踪状态的文件加入暂存区  git commit -m &quot;提交注释内容&quot; 将暂存区文件提交到仓库  git log 查看提交历史  git log 命令参数 12345git log [option]--a">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/assets/git_status.jpg">
+<meta property="og:image" content="http://example.com/assets/git_add.jpg">
+<meta property="og:image" content="http://example.com/assets/git_commit.jpg">
+<meta property="og:image" content="http://example.com/assets/git_log.jpg">
+<meta property="og:image" content="http://example.com/assets/git_reset.jpg">
+<meta property="og:image" content="http://example.com/assets/git_branch.jpg">
+<meta property="og:image" content="http://example.com/assets/git_branch_1.jpg">
+<meta property="og:image" content="http://example.com/assets/git_branch_2.jpg">
+<meta property="og:image" content="http://example.com/assets/%E5%88%86%E6%94%AF%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C.jpg">
+<meta property="og:image" content="http://example.com/assets/git_checkout.jpg">
+<meta property="article:published_time" content="2023-09-10T08:26:09.483Z">
+<meta property="article:modified_time" content="2023-06-29T15:07:12.997Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/git_status.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-git_learn" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/10/git_learn/" class="article-date">
+  <time class="dt-published" datetime="2023-09-10T08:26:09.483Z" itemprop="datePublished">2023-09-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="git-学习记录"><a href="#git-学习记录" class="headerlink" title="git 学习记录"></a>git 学习记录</h1><h2 id="基础指令"><a href="#基础指令" class="headerlink" title="基础指令"></a>基础指令</h2><p><code>git init</code></p>
+<p>将文件夹初始化为一个 git 仓库</p>
+<p><code>git status</code></p>
+<p>查看所有文件状态</p>
+<p><img src="/./assets/git_status.jpg" alt="git status命令效果"></p>
+<p><code>git add &lt;filename&gt;</code></p>
+<p>将未跟踪状态的文件加入暂存区</p>
+<p><img src="/./assets/git_add.jpg" alt="git add命令效果"></p>
+<p><code>git commit -m &quot;提交注释内容&quot;</code></p>
+<p>将暂存区文件提交到仓库</p>
+<p><img src="/./assets/git_commit.jpg" alt="git commit命令效果"></p>
+<p><code>git log</code></p>
+<p>查看提交历史</p>
+<p><img src="/./assets/git_log.jpg" alt="git log命令效果"></p>
+<p>git log 命令参数</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git log [option]</span><br><span class="line">--all 显示所有分支</span><br><span class="line">--pretty=oneline 将提交信息显示为一行</span><br><span class="line">--abbrev-commit 使输出的commit id更简短</span><br><span class="line">--graph 以图的形式显示</span><br></pre></td></tr></table></figure>
+
+<p><code>git reset</code></p>
+<p>版本回退</p>
+<p><img src="/./assets/git_reset.jpg" alt="git reset命令效果"></p>
+<p><code>git branch</code></p>
+<p>查看所有分支</p>
+<p><img src="/./assets/git_branch.jpg" alt="git branch命令效果"></p>
+<p><code>git branch &lt;name&gt;</code></p>
+<p>创建名为 name 的分支</p>
+<p><img src="/./assets/git_branch_1.jpg" alt="git branch创建分支"></p>
+<p>通过<code>git log</code>命令查看创建分支效果</p>
+<p><img src="/./assets/git_branch_2.jpg" alt="查看创建分支效果"></p>
+<p>在当前分支（master 分支）提交文件后查看 log</p>
+<p><img src="/./assets/%E5%88%86%E6%94%AF%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C.jpg" alt="分支运行效果"></p>
+<p><code>git checkout &lt;branch_name&gt;</code></p>
+<p>更换当前分支</p>
+<p><img src="/./assets/git_checkout.jpg" alt="git checkout命令效果"></p>
+<p>能看到 HEAD 指向分支 dev01</p>
+<p>可以直接切换到一个不存在的分支（创建并切换）</p>
+<p><code>git checkout -b &lt;branch_name&gt;</code></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/10/git_learn/" data-id="clmd6y0wt0001q8fm7x6jhyyg" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/09/10/express/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/09/10/webpack-study/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/10/express/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/10/git_learn/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/10/webpack-study/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/10/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/10/test-my-site/">test_my_site</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

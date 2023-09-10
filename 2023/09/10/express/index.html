@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="[toc] Expressexpress 初步使用环境部署 创建文件夹learn4express 初始化项目，在文件夹路径执行npm init -y-y 参数代表创建 yes，即无需后续确认，默认创建 package.json 安装 expressnpm i express 新建 app.js（windows 下可以使用 ni app.js 命令）  基础代码app.js 123456789101">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/09/10/express/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[toc] Expressexpress 初步使用环境部署 创建文件夹learn4express 初始化项目，在文件夹路径执行npm init -y-y 参数代表创建 yes，即无需后续确认，默认创建 package.json 安装 expressnpm i express 新建 app.js（windows 下可以使用 ni app.js 命令）  基础代码app.js 123456789101">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-10T08:26:14.044Z">
+<meta property="article:modified_time" content="2023-08-15T15:20:05.073Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-express" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/10/express/" class="article-date">
+  <time class="dt-published" datetime="2023-09-10T08:26:14.044Z" itemprop="datePublished">2023-09-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>[toc]</p>
+<h1 id="Express"><a href="#Express" class="headerlink" title="Express"></a>Express</h1><h2 id="express-初步使用"><a href="#express-初步使用" class="headerlink" title="express 初步使用"></a>express 初步使用</h2><h3 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h3><ol>
+<li>创建文件夹<code>learn4express</code></li>
+<li>初始化项目，在文件夹路径执行<code>npm init -y</code><br><em>-y 参数代表创建 yes，即无需后续确认，默认创建 package.json</em></li>
+<li>安装 express<code>npm i express</code></li>
+<li>新建 app.js（windows 下可以使用 ni app.js 命令）</li>
+</ol>
+<h3 id="基础代码"><a href="#基础代码" class="headerlink" title="基础代码"></a>基础代码</h3><p><strong>app.js</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//加载 express</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="keyword">import</span> express <span class="keyword">from</span> <span class="string">&#x27;express&#x27;</span></span><br><span class="line"><span class="comment">//调用express，得到一个应用实例</span></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>()</span><br><span class="line"><span class="comment">//添加一个基础路由，请求方法是get，路径是根目录&#x27;/&#x27;</span></span><br><span class="line"><span class="comment">//第二个参数是一个处理函数，传入的两个参数分别是请求，相应对象</span></span><br><span class="line"><span class="comment">//该段代码作用是有get请求访问&#x27;/&#x27;时，返回一串字符串&#x27;Hello World!&#x27;</span></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  res.<span class="title function_">send</span>(<span class="string">&#x27;Hello World!&#x27;</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//设置一个要监听的服务端口号</span></span><br><span class="line">app.<span class="title function_">listen</span>(<span class="number">3000</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Server running at :3000&#x27;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="路由基础"><a href="#路由基础" class="headerlink" title="路由基础"></a>路由基础</h2><p>路由是指确定应用程序如何响应客户端对特定端点的请求，该特定端点是 URI（或路径）和特定的 HTTP 请求方法（GET 或 POST）。<br>每个路由可以具有一个或多个处理程序函数，这些函数在匹配该路由时执行，路由定义采取以下结构：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">METHOD</span>(<span class="variable constant_">PATH</span>, <span class="variable constant_">HANDLER</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>app 是 Express 应用实例</li>
+<li>METHOD 是小写的 HTTP 请求方法</li>
+<li>PATH 是服务器上的路径</li>
+<li>HANDLER 是由路由匹配时执行的功能</li>
+</ul>
+<h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>Express 使用路由回调函数的参数：<strong>request</strong>和<strong>response</strong>对象来处理请求和响应的数据。<br>Express 不对 Node.js 已有的特性进行二次抽象，只是在它之上扩展了 web 应用所需的基本功能。</p>
+<ul>
+<li>内部使用的还是 http 模块</li>
+<li>请求对象继承自<code>http.IncomingMessage</code></li>
+<li>响应对象继承自<code>http.ServerResponse</code></li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://expressjs.com/en/4x/api.html#req">req 对象</a>代表 http 请求，并具有请求查询字符串，参数，正文，HTTP 标头等属性。</p>
+<p><a target="_blank" rel="noopener" href="https://expressjs.com/en/4x/api.html#res">res 对象</a>代表 Express 应用在收到请求时发送的 HTTP 响应。</p>
+<h3 id="查看-post-请求体"><a href="#查看-post-请求体" class="headerlink" title="查看 post 请求体"></a>查看 post 请求体</h3><p>使用<code>req.body</code>查看 post 请求体<br>注意：若数据是 <strong><em>json</em></strong> 格式，直接使用 req.body 无法获取数据<br>需要在<code>const app = express()</code>后添加语句：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">json</span>())</span><br></pre></td></tr></table></figure>
+
+<p>拓展：若需要写入 json 文件时保留缩进换行等格式，可使用<code>JSON.stringfy(&#39;data&#39;,null,&#39;  &#39;)</code></p>
+<h2 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h2><p>需要在复数路由中添加的公共操作，可集中在中间件执行</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//req 请求对象</span></span><br><span class="line"><span class="comment">//res 响应对象</span></span><br><span class="line"><span class="comment">//next 下一个中间件</span></span><br><span class="line">app.<span class="title function_">use</span>(<span class="function">(<span class="params">req, res, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">//TODO...</span></span><br><span class="line">  <span class="comment">//放行请求</span></span><br><span class="line">  <span class="title function_">next</span>()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>这样的中间件会处理所有请求，不论请求地址是否存在！</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/10/express/" data-id="clmd6y0wp0000q8fmh7m5eu6n" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/09/10/git_learn/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/10/express/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/10/git_learn/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/10/webpack-study/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/10/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/10/test-my-site/">test_my_site</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
