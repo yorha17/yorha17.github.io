@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+
+
+<html theme="dark" showBanner="true" hasBanner="false" > 
+<link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="/fontawesome/css/brands.css" rel="stylesheet">
+<link href="/fontawesome/css/solid.css" rel="stylesheet">
+<script src="/js/color.global.min.js" ></script>
+<script src="/js/load-settings.js" ></script>
 <head>
   <meta charset="utf-8">
   
   
+  
+
+  
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
@@ -17,717 +31,821 @@
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
+    <link rel="icon" media="(prefers-color-scheme: light)" href="/images/favicon-light-32.png" sizes="32x32">
+    <link rel="icon" media="(prefers-color-scheme: light)" href="/images/favicon-light-128.png" sizes="128x128">
+    <link rel="icon" media="(prefers-color-scheme: light)" href="/images/favicon-light-180.png" sizes="180x180">
+    <link rel="icon" media="(prefers-color-scheme: light)" href="/images/favicon-light-192.png" sizes="192x192">
+    <link rel="icon" media="(prefers-color-scheme: dark)" href="/images/favicon-dark-32.png" sizes="32x32">
+    <link rel="icon" media="(prefers-color-scheme: dark)" href="/images/favicon-dark-128.png" sizes="128x128">
+    <link rel="icon" media="(prefers-color-scheme: dark)" href="/images/favicon-dark-180.png" sizes="180x180">
+    <link rel="icon" media="(prefers-color-scheme: dark)" href="/images/favicon-dark-192.png" sizes="192x192">
   
   
 <link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+  
+   
+  <div id="main-grid" class="shadow   ">
+    <div id="nav" class=" is_home "  >
+      <navbar id="navbar">
+  <nav id="title-nav">
+    <a href="/">
+      <div id="vivia-logo">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
       </div>
+      <div>Hexo </div>
+    </a>
+  </nav>
+  <nav id="main-nav">
+    
+      <a class="main-nav-link" href="/">Home</a>
+    
+      <a class="main-nav-link" href="/archives">Archives</a>
+    
+      <a class="main-nav-link" href="/about">About</a>
+    
+  </nav>
+  <nav id="sub-nav">
+    <a id="theme-btn" class="nav-icon">
+      <span class="light-mode-icon"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M438.5-829.913v-48q0-17.452 11.963-29.476 11.964-12.024 29.326-12.024 17.363 0 29.537 12.024t12.174 29.476v48q0 17.452-11.963 29.476-11.964 12.024-29.326 12.024-17.363 0-29.537-12.024T438.5-829.913Zm0 747.826v-48q0-17.452 11.963-29.476 11.964-12.024 29.326-12.024 17.363 0 29.537 12.024t12.174 29.476v48q0 17.452-11.963 29.476-11.964 12.024-29.326 12.024-17.363 0-29.537-12.024T438.5-82.087ZM877.913-438.5h-48q-17.452 0-29.476-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537t29.476-12.174h48q17.452 0 29.476 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T877.913-438.5Zm-747.826 0h-48q-17.452 0-29.476-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537T82.087-521.5h48q17.452 0 29.476 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T130.087-438.5Zm660.174-290.87-34.239 32q-12.913 12.674-29.565 12.174-16.653-.5-29.327-13.174-12.674-12.673-12.554-28.826.12-16.152 12.794-28.826l33-35q12.913-12.674 30.454-12.674t30.163 12.847q12.709 12.846 12.328 30.826-.38 17.98-13.054 30.653ZM262.63-203.978l-32 34q-12.913 12.674-30.454 12.674t-30.163-12.847q-12.709-12.846-12.328-30.826.38-17.98 13.054-30.653l33.239-31q12.913-12.674 29.565-12.174 16.653.5 29.327 13.174 12.674 12.673 12.554 28.826-.12 16.152-12.794 28.826Zm466.74 33.239-32-33.239q-12.674-12.913-12.174-29.565.5-16.653 13.174-29.327 12.673-12.674 28.826-13.054 16.152-.38 28.826 12.294l35 33q12.674 12.913 12.674 30.454t-12.847 30.163q-12.846 12.709-30.826 12.328-17.98-.38-30.653-13.054ZM203.978-697.37l-34-33q-12.674-12.913-13.174-29.945-.5-17.033 12.174-29.707t31.326-13.293q18.653-.62 31.326 13.054l32 34.239q11.674 12.913 11.174 29.565-.5 16.653-13.174 29.327-12.673 12.674-28.826 12.554-16.152-.12-28.826-12.794ZM480-240q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm-.247-82q65.703 0 111.475-46.272Q637-414.544 637-480.247t-45.525-111.228Q545.95-637 480.247-637t-111.475 45.525Q323-545.95 323-480.247t45.525 111.975Q414.05-322 479.753-322ZM481-481Z"/></svg></span>
+      <span class="dark-mode-icon"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M480.239-116.413q-152.63 0-258.228-105.478Q116.413-327.37 116.413-480q0-130.935 77.739-227.435t206.304-125.043q43.022-9.631 63.87 10.869t3.478 62.805q-8.891 22.043-14.315 44.463-5.424 22.42-5.424 46.689 0 91.694 64.326 155.879 64.325 64.186 156.218 64.186 24.369 0 46.978-4.946 22.609-4.945 44.413-14.076 42.826-17.369 62.967 1.142 20.142 18.511 10.511 61.054Q807.174-280 712.63-198.206q-94.543 81.793-232.391 81.793Zm0-95q79.783 0 143.337-40.217 63.554-40.218 95.793-108.283-15.608 4.044-31.097 5.326-15.49 1.283-31.859.805-123.706-4.066-210.777-90.539-87.071-86.473-91.614-212.092-.24-16.369.923-31.978 1.164-15.609 5.446-30.978-67.826 32.478-108.282 96.152Q211.652-559.543 211.652-480q0 111.929 78.329 190.258 78.329 78.329 190.258 78.329ZM466.13-465.891Z"/></svg></span>
+    </a>
+    
+      <a id="nav-rss-link" class="nav-icon mobile-hide" href="/atom.xml" title="RSS Feed">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M198-120q-25.846 0-44.23-18.384-18.384-18.385-18.384-44.23 0-25.846 18.384-44.23 18.384-18.385 44.23-18.385 25.846 0 44.23 18.385 18.384 18.384 18.384 44.23 0 25.845-18.384 44.23Q223.846-120 198-120Zm538.385 0q-18.846 0-32.923-13.769-14.076-13.769-15.922-33.23-8.692-100.616-51.077-188.654-42.385-88.039-109.885-155.539-67.5-67.501-155.539-109.885Q283-663.462 182.385-672.154q-19.461-1.846-33.23-16.23-13.769-14.385-13.769-33.846t14.076-32.922q14.077-13.461 32.923-12.23 120.076 8.692 226.038 58.768 105.961 50.077 185.73 129.846 79.769 79.769 129.846 185.731 50.077 105.961 58.769 226.038 1.231 18.846-12.538 32.922Q756.461-120 736.385-120Zm-252 0q-18.231 0-32.423-13.461t-18.653-33.538Q418.155-264.23 348.886-333.5q-69.27-69.27-166.501-84.423-20.077-4.462-33.538-18.961-13.461-14.5-13.461-33.346 0-19.076 13.884-33.23 13.884-14.153 33.115-10.922 136.769 15.384 234.384 112.999 97.615 97.615 112.999 234.384 3.231 19.23-10.538 33.115Q505.461-120 484.385-120Z"/></svg>
+      </a>
+    
+    <div id="nav-menu-btn" class="nav-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M177.37-252.282q-17.453 0-29.477-11.964-12.024-11.963-12.024-29.326t12.024-29.537q12.024-12.174 29.477-12.174h605.26q17.453 0 29.477 11.964 12.024 11.963 12.024 29.326t-12.024 29.537q-12.024 12.174-29.477 12.174H177.37Zm0-186.218q-17.453 0-29.477-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537T177.37-521.5h605.26q17.453 0 29.477 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T782.63-438.5H177.37Zm0-186.217q-17.453 0-29.477-11.964-12.024-11.963-12.024-29.326t12.024-29.537q12.024-12.174 29.477-12.174h605.26q17.453 0 29.477 11.964 12.024 11.963 12.024 29.326t-12.024 29.537q-12.024 12.174-29.477 12.174H177.37Z"/></svg>
     </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
+  </nav>
+</navbar>
+<div id="nav-dropdown" class="hidden">
+  <div id="dropdown-link-list">
+    
+      <a class="nav-dropdown-link" href="/">Home</a>
+    
+      <a class="nav-dropdown-link" href="/archives">Archives</a>
+    
+      <a class="nav-dropdown-link" href="/about">About</a>
+    
+    
+      <a class="nav-dropdown-link" href="/atom.xml" title="RSS Feed">RSS</a>
+     
+    </div>
+</div>
+<script>
+  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownEle = document.getElementById("nav-dropdown");
+  dropdownBtn.onclick = function() {
+    dropdownEle.classList.toggle("hidden");
+  }
+</script>
+    </div>
+    <div id="sidebar-wrapper">
+      <sidebar id="sidebar">
   
-    <article id="post-hexo使用记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" class="article-date">
-  <time class="dt-published" datetime="2023-09-10T13:33:43.000Z" itemprop="datePublished">2023-09-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <div class="widget-wrap">
+  <div class="info-card">
+    <div class="avatar">
+      
+      <div class="img-dim"></div>
+    </div>
+    <div class="info">
+      <div class="username">Your Name </div>
+      <div class="dot"></div>
+      <div class="subtitle">This is the subtitle </div>
+      <div class="link-list">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/">hexo使用记录</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Hexo-使用记录"><a href="#Hexo-使用记录" class="headerlink" title="Hexo 使用记录"></a>Hexo 使用记录</h1><h2 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h2><p><strong>安装 Hexo</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p><strong>升级 Hexo</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm update hexo -g</span><br></pre></td></tr></table></figure>
-
-<p><strong>初始化 blog 文件夹</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [floder_name]</span><br></pre></td></tr></table></figure>
-
-<p><strong>新建文章</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;blog_name&quot;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">或</span></span><br><span class="line">hexo new &quot;blog_name&quot;</span><br></pre></td></tr></table></figure>
-
-<p><strong>生成静态文件</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">或</span></span><br><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-
-<p><strong>运行 Hexo 本地服务端</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">或</span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p><strong>部署 blog</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"></span></span><br><span class="line"><span class="language-bash">hexo deploy</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>清空缓存</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<h2 id="将-Hexo-与-GitHub-关联起来"><a href="#将-Hexo-与-GitHub-关联起来" class="headerlink" title="将 Hexo 与 GitHub 关联起来"></a>将 Hexo 与 GitHub 关联起来</h2><p><strong>打开配置文件</strong><code>_config.yml</code></p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> [<span class="string">github仓库地址</span>]</span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>安装 git 部署插件</strong></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<h2 id="将-blog-绑定自己的域名"><a href="#将-blog-绑定自己的域名" class="headerlink" title="将 blog 绑定自己的域名"></a>将 blog 绑定自己的域名</h2><ol>
-<li><p>在域名解析处增加三条记录：</p>
-<table>
-<thead>
-<tr>
-<th align="left">记录类型</th>
-<th align="left">主机记录</th>
-<th align="left">记录值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">CNAME</td>
-<td align="left">www</td>
-<td align="left">username.github.io</td>
-</tr>
-<tr>
-<td align="left">A</td>
-<td align="left">@</td>
-<td align="left">185.199.111.153</td>
-</tr>
-<tr>
-<td align="left">A</td>
-<td align="left">@</td>
-<td align="left">185.199.111.154</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>在 GitHub 对应仓库设置选项中找到<strong>custom domain</strong>，输入自己的域名，可以勾选强制开启 HTTPS 访问</p>
-</li>
-<li><p>在本地 blog 文件夹中<code>source</code>文件夹下创建<code>CNAME</code>文件，文件内容是自己的顶级域名</p>
-</li>
-</ol>
-<p>完成以上三步后，清空本地缓存，重新生成部署后，即可通过自己的域名访问 blog</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" data-id="clmdkhprl0003msfm8uewho70" data-title="hexo使用记录" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-express" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/10/express/" class="article-date">
-  <time class="dt-published" datetime="2023-09-10T08:26:14.044Z" itemprop="datePublished">2023-09-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>[toc]</p>
-<h1 id="Express"><a href="#Express" class="headerlink" title="Express"></a>Express</h1><h2 id="express-初步使用"><a href="#express-初步使用" class="headerlink" title="express 初步使用"></a>express 初步使用</h2><h3 id="环境部署"><a href="#环境部署" class="headerlink" title="环境部署"></a>环境部署</h3><ol>
-<li>创建文件夹<code>learn4express</code></li>
-<li>初始化项目，在文件夹路径执行<code>npm init -y</code><br><em>-y 参数代表创建 yes，即无需后续确认，默认创建 package.json</em></li>
-<li>安装 express<code>npm i express</code></li>
-<li>新建 app.js（windows 下可以使用 ni app.js 命令）</li>
-</ol>
-<h3 id="基础代码"><a href="#基础代码" class="headerlink" title="基础代码"></a>基础代码</h3><p><strong>app.js</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//加载 express</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="keyword">import</span> express <span class="keyword">from</span> <span class="string">&#x27;express&#x27;</span></span><br><span class="line"><span class="comment">//调用express，得到一个应用实例</span></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>()</span><br><span class="line"><span class="comment">//添加一个基础路由，请求方法是get，路径是根目录&#x27;/&#x27;</span></span><br><span class="line"><span class="comment">//第二个参数是一个处理函数，传入的两个参数分别是请求，相应对象</span></span><br><span class="line"><span class="comment">//该段代码作用是有get请求访问&#x27;/&#x27;时，返回一串字符串&#x27;Hello World!&#x27;</span></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  res.<span class="title function_">send</span>(<span class="string">&#x27;Hello World!&#x27;</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//设置一个要监听的服务端口号</span></span><br><span class="line">app.<span class="title function_">listen</span>(<span class="number">3000</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Server running at :3000&#x27;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<h2 id="路由基础"><a href="#路由基础" class="headerlink" title="路由基础"></a>路由基础</h2><p>路由是指确定应用程序如何响应客户端对特定端点的请求，该特定端点是 URI（或路径）和特定的 HTTP 请求方法（GET 或 POST）。<br>每个路由可以具有一个或多个处理程序函数，这些函数在匹配该路由时执行，路由定义采取以下结构：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">METHOD</span>(<span class="variable constant_">PATH</span>, <span class="variable constant_">HANDLER</span>)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>app 是 Express 应用实例</li>
-<li>METHOD 是小写的 HTTP 请求方法</li>
-<li>PATH 是服务器上的路径</li>
-<li>HANDLER 是由路由匹配时执行的功能</li>
-</ul>
-<h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>Express 使用路由回调函数的参数：<strong>request</strong>和<strong>response</strong>对象来处理请求和响应的数据。<br>Express 不对 Node.js 已有的特性进行二次抽象，只是在它之上扩展了 web 应用所需的基本功能。</p>
-<ul>
-<li>内部使用的还是 http 模块</li>
-<li>请求对象继承自<code>http.IncomingMessage</code></li>
-<li>响应对象继承自<code>http.ServerResponse</code></li>
-</ul>
-<p><a target="_blank" rel="noopener" href="https://expressjs.com/en/4x/api.html#req">req 对象</a>代表 http 请求，并具有请求查询字符串，参数，正文，HTTP 标头等属性。</p>
-<p><a target="_blank" rel="noopener" href="https://expressjs.com/en/4x/api.html#res">res 对象</a>代表 Express 应用在收到请求时发送的 HTTP 响应。</p>
-<h3 id="查看-post-请求体"><a href="#查看-post-请求体" class="headerlink" title="查看 post 请求体"></a>查看 post 请求体</h3><p>使用<code>req.body</code>查看 post 请求体<br>注意：若数据是 <strong><em>json</em></strong> 格式，直接使用 req.body 无法获取数据<br>需要在<code>const app = express()</code>后添加语句：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">json</span>())</span><br></pre></td></tr></table></figure>
-
-<p>拓展：若需要写入 json 文件时保留缩进换行等格式，可使用<code>JSON.stringfy(&#39;data&#39;,null,&#39;  &#39;)</code></p>
-<h2 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h2><p>需要在复数路由中添加的公共操作，可集中在中间件执行</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//req 请求对象</span></span><br><span class="line"><span class="comment">//res 响应对象</span></span><br><span class="line"><span class="comment">//next 下一个中间件</span></span><br><span class="line">app.<span class="title function_">use</span>(<span class="function">(<span class="params">req, res, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">//TODO...</span></span><br><span class="line">  <span class="comment">//放行请求</span></span><br><span class="line">  <span class="title function_">next</span>()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p><strong>这样的中间件会处理所有请求，不论请求地址是否存在！</strong></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/express/" data-id="clmdkhprf0000msfmgmwq1f4j" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-git_learn" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/10/git_learn/" class="article-date">
-  <time class="dt-published" datetime="2023-09-10T08:26:09.483Z" itemprop="datePublished">2023-09-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="git-学习记录"><a href="#git-学习记录" class="headerlink" title="git 学习记录"></a>git 学习记录</h1><h2 id="基础指令"><a href="#基础指令" class="headerlink" title="基础指令"></a>基础指令</h2><p><code>git init</code></p>
-<p>将文件夹初始化为一个 git 仓库</p>
-<p><code>git status</code></p>
-<p>查看所有文件状态</p>
-<p><img src="/./assets/git_status.jpg" alt="git status命令效果"></p>
-<p><code>git add &lt;filename&gt;</code></p>
-<p>将未跟踪状态的文件加入暂存区</p>
-<p><img src="/./assets/git_add.jpg" alt="git add命令效果"></p>
-<p><code>git commit -m &quot;提交注释内容&quot;</code></p>
-<p>将暂存区文件提交到仓库</p>
-<p><img src="/./assets/git_commit.jpg" alt="git commit命令效果"></p>
-<p><code>git log</code></p>
-<p>查看提交历史</p>
-<p><img src="/./assets/git_log.jpg" alt="git log命令效果"></p>
-<p>git log 命令参数</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git log [option]</span><br><span class="line">--all 显示所有分支</span><br><span class="line">--pretty=oneline 将提交信息显示为一行</span><br><span class="line">--abbrev-commit 使输出的commit id更简短</span><br><span class="line">--graph 以图的形式显示</span><br></pre></td></tr></table></figure>
-
-<p><code>git reset</code></p>
-<p>版本回退</p>
-<p><img src="/./assets/git_reset.jpg" alt="git reset命令效果"></p>
-<p><code>git branch</code></p>
-<p>查看所有分支</p>
-<p><img src="/./assets/git_branch.jpg" alt="git branch命令效果"></p>
-<p><code>git branch &lt;name&gt;</code></p>
-<p>创建名为 name 的分支</p>
-<p><img src="/./assets/git_branch_1.jpg" alt="git branch创建分支"></p>
-<p>通过<code>git log</code>命令查看创建分支效果</p>
-<p><img src="/./assets/git_branch_2.jpg" alt="查看创建分支效果"></p>
-<p>在当前分支（master 分支）提交文件后查看 log</p>
-<p><img src="/./assets/%E5%88%86%E6%94%AF%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C.jpg" alt="分支运行效果"></p>
-<p><code>git checkout &lt;branch_name&gt;</code></p>
-<p>更换当前分支</p>
-<p><img src="/./assets/git_checkout.jpg" alt="git checkout命令效果"></p>
-<p>能看到 HEAD 指向分支 dev01</p>
-<p>可以直接切换到一个不存在的分支（创建并切换）</p>
-<p><code>git checkout -b &lt;branch_name&gt;</code></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/git_learn/" data-id="clmdkhprl0002msfm0q676yfy" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-webpack-study" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/10/webpack-study/" class="article-date">
-  <time class="dt-published" datetime="2023-09-10T08:12:05.656Z" itemprop="datePublished">2023-09-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>[toc]</p>
-<h1 id="webpack-学习"><a href="#webpack-学习" class="headerlink" title="webpack 学习"></a>webpack 学习</h1><h2 id="初始化环境"><a href="#初始化环境" class="headerlink" title="初始化环境"></a>初始化环境</h2><ol>
-<li>新建文件夹</li>
-<li>在文件夹中打开命令窗口，执行<code>npm init -y</code>，生成 package.json 文件</li>
-<li>js 代码写在<strong>src</strong>文件夹下</li>
-<li>安装 webpack</li>
-</ol>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装 webpack、webpack-cli 两个包</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install webpack webpack-cli -D</span><br></pre></td></tr></table></figure>
-
-<p><code>-D</code>即<code>--save-deb</code>，即开发依赖，代表此包仅开发时使用</p>
-<h2 id="运行脚本准备"><a href="#运行脚本准备" class="headerlink" title="运行脚本准备"></a>运行脚本准备</h2><ol>
-<li>修改<strong>package.json</strong>文件，在<strong>script</strong>对象中添加属性名为<code>build</code>,属性值为<code>webpack</code>，此处属性名可以任意规定，属性值为实际执行的命令</li>
-</ol>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;build&quot;</span><span class="punctuation">:</span> <span class="string">&quot;webpack&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="修改-webpack-配置"><a href="#修改-webpack-配置" class="headerlink" title="修改 webpack 配置"></a>修改 webpack 配置</h2><h3 id="修改默认入口"><a href="#修改默认入口" class="headerlink" title="修改默认入口"></a>修改默认入口</h3><p>webpack 官网中关于默认入口出口的说明如下</p>
-<blockquote>
-<p>默认值是 .&#x2F;src&#x2F;index.js，但你可以通过在 webpack configuration 中配置 entry 属性，来指定一个（或多个）不同的入口起点。例如</p>
-</blockquote>
-<p>webpack.config.js</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">entry</span>: <span class="string">&#x27;./path/to/my/entry/file.js&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>修改步骤：</p>
-<ol>
-<li>在根目录下新建<code>webpack.config.js</code>文件</li>
-<li>在文件中写入上方的配置项</li>
-</ol>
-<h3 id="修改默认出口"><a href="#修改默认出口" class="headerlink" title="修改默认出口"></a>修改默认出口</h3><p>默认出口即 webpack 打包后生成的 js 文件，官网中说明如下：</p>
-<blockquote>
-<p>output 属性告诉 webpack 在哪里输出它所创建的 bundle，以及如何命名这些文件。主要输出文件的默认值是 .&#x2F;dist&#x2F;main.js，其他生成文件默认放置在 .&#x2F;dist 文件夹中。<br>你可以通过在配置中指定一个 output 字段，来配置这些处理过程:</p>
-</blockquote>
-<p>webpack.config.js</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>)</span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">entry</span>: <span class="string">&#x27;./path/to/my/entry/file.js&#x27;</span>,</span><br><span class="line">  <span class="attr">output</span>: &#123;</span><br><span class="line">    <span class="attr">path</span>: path.<span class="title function_">resolve</span>(__dirname, <span class="string">&#x27;dist&#x27;</span>),</span><br><span class="line">    <span class="attr">filename</span>: <span class="string">&#x27;my-first-webpack.bundle.js&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>注意：<u>出口文件路径必须使用绝对路径</u></p>
-<h2 id="webpack-初级使用"><a href="#webpack-初级使用" class="headerlink" title="webpack 初级使用"></a>webpack 初级使用</h2><ol>
-<li>写代码，在 src 文件夹中按照配置的规则新建入口 js 文件并编辑代码</li>
-<li>运行 webpack 脚本打包 js 代码，<code>npm run build</code></li>
-</ol>
-<p><img src="/./img/webpack-1.jpg" alt="运行结果"></p>
-<p><img src="/./img/webpack-2.jpg" alt="运行结果2"></p>
-<p>默认生成的是<code>main.js</code>，这里是进行了配置的结果</p>
-<h2 id="html-文件部署"><a href="#html-文件部署" class="headerlink" title="html 文件部署"></a>html 文件部署</h2><h3 id="入门方式"><a href="#入门方式" class="headerlink" title="入门方式"></a>入门方式</h3><p>在根目录下新建 public 文件夹，html 文件放在该文件夹中，js 文件打包完成后将 html 文件手动复制到 dist 文件夹中</p>
-<h3 id="自动部署方式"><a href="#自动部署方式" class="headerlink" title="自动部署方式"></a>自动部署方式</h3><h4 id="安装部署用插件-html-webpack-plugin"><a href="#安装部署用插件-html-webpack-plugin" class="headerlink" title="安装部署用插件 html-webpack-plugin"></a>安装部署用插件 html-webpack-plugin</h4><p>插件介绍：</p>
-<blockquote>
-<p>HtmlWebpackPlugin 简化了 HTML 文件的创建，以便为你的 webpack 包提供服务。这对于那些文件名中包含哈希值，并且哈希值会随着每次编译而改变的 webpack 包特别有用。你可以让该插件为你生成一个 HTML 文件，使用 lodash 模板提供模板，或者使用你自己的 loader。</p>
-</blockquote>
-<h5 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h5><p><code>npm i html-webpack-plugin -D</code></p>
-<h5 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h5><blockquote>
-<p>该插件将为你生成一个 HTML5 文件， 在 body 中使用 script 标签引入你所有 webpack 生成的 bundle。 只需添加该插件到你的 webpack 配置中，如下所示：</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">HtmlWebpackPlugin</span> = <span class="built_in">require</span>(<span class="string">&#x27;html-webpack-plugin&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">plugins</span>: [<span class="keyword">new</span> <span class="title class_">HtmlWebpackPlugin</span>()]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h5><p>将配置项作为对象传入引用插件中，如已经有自己的 html 模板，不使用默认模板，则使用以下配置</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">plugins</span>: [</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">HtmlWebpackPlugin</span>(&#123;</span><br><span class="line">      <span class="attr">template</span>: path.<span class="title function_">join</span>(__dirname, <span class="string">&#x27;public/index.html&#x27;</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="引入-css"><a href="#引入-css" class="headerlink" title="引入 css"></a>引入 css</h2><p>注意：</p>
-<ul>
-<li><u>webpack 打包的对象是 js 文件</u></li>
-<li><u>webpack 默认只识别 js 和 json 文件</u></li>
-</ul>
-<p>由于 webpack 打包的对象是 js 文件，因此需要在 js 代码中引入 css 文件</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//默认引用方式：</span></span><br><span class="line"><span class="comment">//import var from &#x27;path&#x27;</span></span><br><span class="line"><span class="comment">//引用css文件方式：</span></span><br><span class="line"><span class="comment">//import &#x27;path&#x27;</span></span><br><span class="line"><span class="comment">//代表不接受任何数据，只是将其引用进来，让webpack打包</span></span><br><span class="line"><span class="comment">//webpack会打包所有和入口文件有直接或间接关系的文件</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./css/index.css&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>尝试直接运行打包命令，由于 webpack 默认不识别 css 文件，因此会报错</p>
-<p><img src="/./img/%E7%9B%B4%E6%8E%A5%E6%89%93%E5%8C%85css%E6%96%87%E4%BB%B6%E6%8A%A5%E9%94%99.jpg" alt="直接使用webpack打包"></p>
-<h3 id="加载器"><a href="#加载器" class="headerlink" title="加载器"></a>加载器</h3><p><strong>加载器 css-loader</strong>:解析 css 代码<br><strong>加载器 style-loader</strong>：把解析后的 css 代码插入到 DOM</p>
-<p>步骤：</p>
-<ol>
-<li>准备 css 文件引入到 src&#x2F;main.js 中</li>
-<li>下载 css-loader 和 style-loader 本地软件包<br><code>npm i css-loader style-loader --save-dev</code></li>
-<li>配置 webpack.config.js 让 webpack 拥有该加载器功能</li>
-</ol>
-<h4 id="css-loader-和-style-loader"><a href="#css-loader-和-style-loader" class="headerlink" title="css-loader 和 style-loader"></a>css-loader 和 style-loader</h4><ol>
-<li>安装<code>npm install --save-dev css-loader style-loader</code></li>
-<li>把 loader 引入到 webpack 配置中</li>
-</ol>
-<p><strong>file.js</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> css <span class="keyword">from</span> <span class="string">&#x27;file.css&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>webpack.config.js</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">module</span>: &#123;</span><br><span class="line">    <span class="attr">rules</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="comment">//匹配css结尾的文件，交给下面的loader处理</span></span><br><span class="line">        <span class="attr">test</span>: <span class="regexp">/\.css$/i</span>,</span><br><span class="line">        <span class="comment">//先交给css，再交给style</span></span><br><span class="line">        <span class="comment">//顺序是从右到左</span></span><br><span class="line">        <span class="attr">use</span>: [<span class="string">&#x27;style-loader&#x27;</span>, <span class="string">&#x27;css-loader&#x27;</span>]</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>接下来就可以运行打包命令</li>
-</ol>
-<h4 id="less-loader"><a href="#less-loader" class="headerlink" title="less-loader"></a>less-loader</h4><ol>
-<li>安装 less 和 less-loader<br><code>npm install less less-loader --save-dev</code></li>
-<li>然后将该 loader 添加到 webpack 的配置中去</li>
-</ol>
-<p><strong>webpack.config.js</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">module</span>: &#123;</span><br><span class="line">    <span class="attr">rules</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">test</span>: <span class="regexp">/\.less$/i</span>,</span><br><span class="line">        <span class="attr">use</span>: [</span><br><span class="line">          <span class="comment">// compiles Less to CSS</span></span><br><span class="line">          <span class="string">&#x27;style-loader&#x27;</span>,</span><br><span class="line">          <span class="string">&#x27;css-loader&#x27;</span>,</span><br><span class="line">          <span class="string">&#x27;less-loader&#x27;</span></span><br><span class="line">        ]</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="图片资源打包"><a href="#图片资源打包" class="headerlink" title="图片资源打包"></a>图片资源打包</h2><p><strong>资源模块</strong>：webpack5 内置了资源模块的打包<br>步骤：</p>
-<ol>
-<li>准备图片素材到 src&#x2F;assets 中</li>
-<li>在 index.less 中给 body 添加背景图</li>
-<li>在 main.js 中给 img 标签添加图片</li>
-</ol>
-<p><strong>webpack.config.js</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">rules</span>: [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">test</span>: <span class="regexp">/\.(png|jpg|gif|jpeg)$/i</span>,</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;asset&#x27;</span>,</span><br><span class="line">    <span class="attr">generator</span>: &#123;</span><br><span class="line">      <span class="attr">filename</span>: <span class="string">&#x27;assets/[hash][ext]&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-
-<h2 id="babel"><a href="#babel" class="headerlink" title="babel"></a>babel</h2><p><strong>Babel 是一个 JavaScript 编译器</strong></p>
-<blockquote>
-<p>Babel 是一个工具链，主要用于将采用 ECMAScript 2015+ 语法编写的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。</p>
-</blockquote>
-<p>安装：<br><code>npm install -D babel-loader @babel/core @babel/preset-env</code></p>
-<p>配置：<br><strong>webpack.config.js</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">      <span class="comment">//匹配js或mjs结尾的文件</span></span><br><span class="line">      <span class="attr">test</span>: <span class="regexp">/\.m?js$/</span>,</span><br><span class="line">      <span class="comment">//排除：node_modules bower_components bower打包工具生成的包，已经打包过了无需降级</span></span><br><span class="line">      <span class="attr">exclude</span>: <span class="regexp">/(node_modules|bower_components)/</span>,</span><br><span class="line">      <span class="attr">use</span>: &#123;</span><br><span class="line">        <span class="attr">loader</span>: <span class="string">&#x27;babel-loader&#x27;</span>,</span><br><span class="line">        <span class="attr">options</span>: &#123;</span><br><span class="line">          <span class="comment">//preset-env:语法预设，将xxx语法转成xxx语法</span></span><br><span class="line">          <span class="attr">presets</span>: [<span class="string">&#x27;@babel/preset-env&#x27;</span>]</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="webpack-开发服务器"><a href="#webpack-开发服务器" class="headerlink" title="webpack 开发服务器"></a>webpack 开发服务器</h2><p>webpack-dev-server：快速开发应用程序<br>作用：启动 web 服务，打包输出源码在内存，并检测代码变化热更新到网页</p>
-<p>步骤：</p>
-<ol>
-<li>下载 webpack-dev-server 软件包到当前项目</li>
-<li>配置运行脚本<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line"> <span class="string">&quot;dev&quot;</span>: <span class="string">&quot;webpack serve --mode=development&quot;</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="打包模式"><a href="#打包模式" class="headerlink" title="打包模式"></a>打包模式</h2><p>告知 Webpack 使用相应模式的内置优化</p>
-<p>分类：</p>
-<table>
-<thead>
-<tr>
-<th align="left">模式名称</th>
-<th align="left">模式名字</th>
-<th align="left">特点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">开发模式</td>
-<td align="left">development</td>
-<td align="left">调试代码，实时加载，模块热替换…</td>
-</tr>
-<tr>
-<td align="left">生产模式</td>
-<td align="left">production</td>
-<td align="left">压缩代码，资源优化，更轻量化…</td>
-</tr>
-</tbody></table>
-<p>设置方法：</p>
-<ul>
-<li>在 webpack.config.js 配置文件设置 mode 项<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">mode</span>: <span class="string">&#x27;production&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>在 package.json 命令行设置 mode 参数<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line"> <span class="comment">//--mode=development代表开发模式</span></span><br><span class="line"> <span class="attr">&quot;dev&quot;</span><span class="punctuation">:</span> <span class="string">&quot;webpack serve --mode=development&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<p>未设置打包模式时执行打包命令，运行结果中会有警告内容：<br><img src="/./img/%E6%89%93%E5%8C%85%E8%AD%A6%E5%91%8A%E9%A1%B9.jpg" alt="警告内容"></p>
-<p>设置打包模式后，执行打包命令：<br><img src="/./img/%E6%89%93%E5%8C%85%E7%BB%93%E6%9E%9C.jpg" alt="打包结果"></p>
-<h2 id="解析别名-alias"><a href="#解析别名-alias" class="headerlink" title="解析别名 alias"></a>解析别名 alias</h2><p>配置模块如何解析，创建 import 或 require 的别名，来确保模块引入变得更简单</p>
-<p>在 webpack.config.js 中：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">resolve</span>: &#123;</span><br><span class="line">    <span class="attr">alias</span>: &#123;</span><br><span class="line">      <span class="title class_">MyUtils</span>: path.<span class="title function_">join</span>(__dirname, <span class="string">&#x27;src/utils&#x27;</span>),</span><br><span class="line">      <span class="string">&#x27;@&#x27;</span>: path.<span class="title function_">join</span>(__dirname, <span class="string">&#x27;src&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/webpack-study/" data-id="clmdkhpro0006msfma7wb80s6" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/10/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-09-10T07:52:18.777Z" itemprop="datePublished">2023-09-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          <a class="link-btn" target="_blank" rel="noopener" href="https://twitter.com" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/09/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/hello-world/" data-id="clmdkhprj0001msfm49zxd31x" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-test-my-site" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/10/test-my-site/" class="article-date">
-  <time class="dt-published" datetime="2023-09-10T06:58:35.000Z" itemprop="datePublished">2023-09-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          <a class="link-btn" target="_blank" rel="noopener" href="https://store.steampowered.com" title="Steam"><i class="fa-brands fa-steam"></i></a>
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/09/10/test-my-site/">test_my_site</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
+          <a class="link-btn" target="_blank" rel="noopener" href="https://github.com" title="GitHub"><i class="fa-brands fa-github"></i></a>
+         
+      </div>  
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/10/test-my-site/" data-id="clmdkhprn0004msfm9p4t9045" data-title="test_my_site" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
   </div>
-  
-</article>
-
-
+</div>
 
   
-    <article id="post-v3-blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/06/v3-blog/" class="article-date">
-  <time class="dt-published" datetime="2023-09-06T12:55:36.023Z" itemprop="datePublished">2023-09-06</time>
-</a>
+  <div class="sticky">
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="v3-blog-开发记录"><a href="#v3-blog-开发记录" class="headerlink" title="v3-blog 开发记录"></a>v3-blog 开发记录</h1><h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
-<li>博文列表展示</li>
-<li>分页展示</li>
-<li>搜索框实时查询</li>
-<li>博文分类切换查看</li>
-<li>后台登录</li>
-<li>文章、分类管理</li>
-<li>富文本编辑</li>
-<li>图片上传</li>
-<li>登录验证，token 技术</li>
-</ul>
-<h2 id="开发技术栈"><a href="#开发技术栈" class="headerlink" title="开发技术栈"></a>开发技术栈</h2><blockquote>
-<p>npm 装包卡顿，更换源：<br>npm config set registry <a target="_blank" rel="noopener" href="https://registry.npmmirror.com/">https://registry.npmmirror.com/</a><br>查看源：npm config get registry</p>
-</blockquote>
-<ul>
-<li>服务端：<ul>
-<li>Express 框架</li>
-<li>multer 包（上传文件）</li>
-<li>sqlite3（数据库）</li>
-<li>uuid（生成安全 id）</li>
-</ul>
-</li>
-<li>前端：Naive UI（TypeScript）</li>
-</ul>
-<h2 id="服务端开发"><a href="#服务端开发" class="headerlink" title="服务端开发"></a>服务端开发</h2><ol>
-<li>新建空项目，安装 express 包（Tips:可以直接 install）</li>
-<li>安装 multer sqlite3 uuid</li>
-<li>安装 json 支持<code>app.use(express.json())</code></li>
-<li>设置开放跨域请求</li>
-<li>设置上传文件中间件 multer 即上传目录</li>
-<li>配置数据库<ul>
-<li>数据库软件：heidisql</li>
-<li>数据库选择：sqlite</li>
-</ul>
-</li>
-<li>测试路由</li>
-<li>数据库查询优化，使用 promise</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/09/06/v3-blog/" data-id="clmdkhprn0005msfm9fot8uov" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
 
 
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
     
+      
 
-  
     
-
-  
-    
-  
-    
+      
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
+      <h3 class="widget-title">Archives</h3>
+      
+      
+        <a class="archive-link" href="/archives/2023/09 ">
+          September 2023 
+          <div class="archive-count">7 </div>
+        </a>
+      
     </div>
   </div>
 
 
-  
     
+      
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
+      <h3 class="widget-title">Recent Posts</h3>
       <ul>
         
-          <li>
-            <a href="/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/">hexo使用记录</a>
-          </li>
+          <a class="recent-link" href="/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" title="hexo使用记录" >
+            <div class="recent-link-text">
+              hexo使用记录
+            </div>
+          </a>
         
-          <li>
-            <a href="/2023/09/10/express/">(no title)</a>
-          </li>
+          <a class="recent-link" href="/2023/09/10/express/" title="" >
+            <div class="recent-link-text">
+              (no title)
+            </div>
+          </a>
         
-          <li>
-            <a href="/2023/09/10/git_learn/">(no title)</a>
-          </li>
+          <a class="recent-link" href="/2023/09/10/git_learn/" title="" >
+            <div class="recent-link-text">
+              (no title)
+            </div>
+          </a>
         
-          <li>
-            <a href="/2023/09/10/webpack-study/">(no title)</a>
-          </li>
+          <a class="recent-link" href="/2023/09/10/webpack-study/" title="" >
+            <div class="recent-link-text">
+              (no title)
+            </div>
+          </a>
         
-          <li>
-            <a href="/2023/09/10/hello-world/">Hello World</a>
-          </li>
+          <a class="recent-link" href="/2023/09/10/hello-world/" title="Hello World" >
+            <div class="recent-link-text">
+              Hello World
+            </div>
+          </a>
         
       </ul>
     </div>
   </div>
 
+    
+  </div>
+</sidebar>
+    </div>
+    <div id="content-body">
+      
+   
+
+<article id="post-hexo使用记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
   
-</aside>
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/">hexo使用记录</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-09-10T13:33:43.000Z" itemprop="datePublished">2023-09-10</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            268 words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            Hexo 使用记录基础使用安装 Hexo
+1npm i -g hexo-cli
+
+升级 Hexo
+1npm update hexo -g
+
+初始化 blog 文件夹
+1hexo init [floder_name]
+
+新建文章
+123hexo n &quot;blog_name&quot;#或hexo new &quot;blog_name&quot;
+
+生成静态文件
+123hexo g#或hexo generate
+
+运行 Hexo 本地服务端
+123hexo s#或hexo server
+
+部署 blog
+123hexo d#hexo deploy
+
+清空缓存
+1hexo clean
+
+将 Hexo 与 GitHub 关联起来打开配置文件_config.yml
+1234deploy:  type: git  repo: [github仓库地址]  branch: main
+
+安装 git 部署插件
+1npm install hexo-deployer-git --save
+
+将 blog 绑定自己的域名
+在域名解析处增加三条记录：
+
+
+
+记录类型
+主机记录
+记录值
+
+
+
+CN...  
+          </div>
         
       </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/09/10/hexo%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
+   
+
+<article id="post-express" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/09/10/express/">Untitled</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-09-10T08:26:14.044Z" itemprop="datePublished">2023-09-10</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            634 words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            [toc]
+Expressexpress 初步使用环境部署
+创建文件夹learn4express
+初始化项目，在文件夹路径执行npm init -y-y 参数代表创建 yes，即无需后续确认，默认创建 package.json
+安装 expressnpm i express
+新建 app.js（windows 下可以使用 ni app.js 命令）
+
+基础代码app.js
+1234567891011121314151617//加载 express//const express = require(&#x27;express&#x27;)//import express from &#x27;express&#x27;//调用express，得到一个应用实例const app = express()//添加一个基础路由，请求方法是get，路径是根目录&#x27;/&#x27;//第二个参数是一个处理函数，传入的两个参数分别是请求，相应对象//该段代码作用是有get请求访问&#x27;/&#x27;时，返回一串字符串&#x27;Hello World!&#x27;app.get(&#...  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/09/10/express/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
+   
+
+<article id="post-git_learn" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/09/10/git_learn/">Untitled</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-09-10T08:26:09.483Z" itemprop="datePublished">2023-09-10</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            286 words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            git 学习记录基础指令git init
+将文件夹初始化为一个 git 仓库
+git status
+查看所有文件状态
+
+git add &lt;filename&gt;
+将未跟踪状态的文件加入暂存区
+
+git commit -m &quot;提交注释内容&quot;
+将暂存区文件提交到仓库
+
+git log
+查看提交历史
+
+git log 命令参数
+12345git log [option]--all 显示所有分支--pretty=oneline 将提交信息显示为一行--abbrev-commit 使输出的commit id更简短--graph 以图的形式显示
+
+git reset
+版本回退
+
+git branch
+查看所有分支
+
+git branch &lt;name&gt;
+创建名为 name 的分支
+
+通过git log命令查看创建分支效果
+
+在当前分支（master 分支）提交文件后查看 log
+
+git checkout &lt;branch_name&gt;
+更换当前分支
+
+能看到 HEAD 指向分支 dev01
+可以直接切换到一个不存在的分支（创建并切换）
+git ...  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/09/10/git_learn/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
+   
+
+<article id="post-webpack-study" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/09/10/webpack-study/">Untitled</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-09-10T08:12:05.656Z" itemprop="datePublished">2023-09-10</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            1.6k words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            [toc]
+webpack 学习初始化环境
+新建文件夹
+在文件夹中打开命令窗口，执行npm init -y，生成 package.json 文件
+js 代码写在src文件夹下
+安装 webpack
+
+安装安装 webpack、webpack-cli 两个包
+1npm install webpack webpack-cli -D
+
+-D即--save-deb，即开发依赖，代表此包仅开发时使用
+运行脚本准备
+修改package.json文件，在script对象中添加属性名为build,属性值为webpack，此处属性名可以任意规定，属性值为实际执行的命令
+
+123&quot;scripts&quot;: &#123;    &quot;build&quot;: &quot;webpack&quot;  &#125;,
+
+修改 webpack 配置修改默认入口webpack 官网中关于默认入口出口的说明如下
+
+默认值是 .&#x2F;src&#x2F;index.js，但你可以通过在 webpack configuration 中配置 entry 属性，来指定一个（或多个）不同的入口起...  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/09/10/webpack-study/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
+   
+
+<article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/09/10/hello-world/">Hello World</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-09-10T07:52:18.777Z" itemprop="datePublished">2023-09-10</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            78 words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server1$ hexo server
+
+More info: Server
+Generate static files1$ hexo generate
+
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+
+More info: Deployment
+  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/09/10/hello-world/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
+   
+
+<article id="post-test-my-site" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/09/10/test-my-site/">test_my_site</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-09-10T06:58:35.000Z" itemprop="datePublished">2023-09-10</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            0 words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+              
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/09/10/test-my-site/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
+   
+
+<article id="post-v3-blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/09/06/v3-blog/">Untitled</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-09-06T12:55:36.023Z" itemprop="datePublished">2023-09-06</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            208 words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            v3-blog 开发记录主要功能
+博文列表展示
+分页展示
+搜索框实时查询
+博文分类切换查看
+后台登录
+文章、分类管理
+富文本编辑
+图片上传
+登录验证，token 技术
+
+开发技术栈
+npm 装包卡顿，更换源：npm config set registry https://registry.npmmirror.com/查看源：npm config get registry
+
+
+服务端：
+Express 框架
+multer 包（上传文件）
+sqlite3（数据库）
+uuid（生成安全 id）
+
+
+前端：Naive UI（TypeScript）
+
+服务端开发
+新建空项目，安装 express 包（Tips:可以直接 install）
+安装 multer sqlite3 uuid
+安装 json 支持app.use(express.json())
+设置开放跨域请求
+设置上传文件中间件 multer 即上传目录
+配置数据库
+数据库软件：heidisql
+数据库选择：sqlite
+
+
+测试路由
+数据库查询优化，使用 promise
+
+  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/09/06/v3-blog/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
+
+
+    </div>
+    <div id="footer-wrapper">
       <footer id="footer">
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
+  <div id="footer-info" class="inner">
+    
+    &copy; 2023 Your Name<br>
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
   </div>
 </footer>
 
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+    <div class="back-to-top-wrapper">
+    <button id="back-to-top-btn" class="back-to-top-btn hide" onclick="topFunction()">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+</div>
 
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
+<script>
+    function topFunction() {
+        window.scroll({ top: 0, behavior: 'smooth' });
+    }
+    let btn = document.getElementById('back-to-top-btn');
+    function scrollFunction() {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            btn.classList.remove('hide')
+        } else {
+            btn.classList.add('hide')
+        }
+    }
+    window.onscroll = function() {
+        scrollFunction();
+    }
+</script>
 
   </div>
+  <script src="/js/light-dark-switch.js"></script>
 </body>
 </html>
